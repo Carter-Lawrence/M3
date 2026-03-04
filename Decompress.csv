@@ -1,0 +1,6 @@
+import gzip
+import shutil
+
+with gzip.open('/Users/carterlawrence/Downloads/cps_00002.csv.gz', 'rb') as f_in:
+    with open('/Users/carterlawrence/Downloads/cps_00002.csv', 'wb') as f_out:
+     shutil.copyfileobj(f_in, f_out)
